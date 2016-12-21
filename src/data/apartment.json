@@ -1,0 +1,108 @@
+{
+    "apartments": [
+        {
+        	"name": "The Pavilion on Berry",
+        	"image": "src/img/image-1.jpg",
+        	"price": 512,
+        	"popularity": 25,
+        	"description": "University of Minnesota, Twin Cities",
+			"state": "Minneapolis, MN"
+        },
+        {        	
+        	"name": "Radius @15th",
+        	"image": "src/img/image-3.jpg",
+        	"price": 492,
+        	"popularity": 27,
+        	"description": "University of Minnesota, Twin Cities",
+			"state": "Minneapolis, MN"
+        },
+        {
+
+        	"name": "416 Lofts",
+        	"image": "src/img/image-2.jpg",
+        	"price": 460,
+        	"popularity": 13,
+        	"description": "University of Minnesota, Twin Cities",
+			"state": "Minneapolis, MN"
+        },
+        {
+
+        	"name": "Edge on Oak",
+        	"image": "src/img/image-4.jpg",
+        	"price": 532,
+        	"popularity": 7,
+        	"description": "University of Minnesota, Twin Cities",
+			"state": "Minneapolis, MN"
+        },
+        {
+
+            "name": "Garden Studio Apartment",
+            "image": "src/img/image-5.jpg",
+            "price": 600,
+            "popularity": 10,
+            "description": "University of Minnesota, Twin Cities",
+            "state": "Minneapolis, MN"
+      },
+      {
+        "name": "New Luxury 1bd",
+        "image": "src/img/image-6.jpg",
+        "price": 620,
+        "popularity": 4,
+        "description": "University of Minnesota, Twin Cities",
+        "state": "Minneapolis, MN"
+      },
+      {
+        "name": "Modern Retreat",
+        "image": "src/img/image-7.jpg",
+        "price": 592,
+        "popularity": 15,
+        "description": "University of Minnesota, Twin Cities",
+        "state": "Minneapolis, MN"
+      },
+      {
+
+        "name": "Gorgeous Downtown Penthouse",
+        "image": "src/img/image-8.jpg",
+        "price": 660,
+        "popularity": 20,
+        "description": "University of Minnesota, Twin Cities",
+        "state": "Minneapolis, MN"
+      },
+      {
+
+        "name": "Modern Guest Loft",
+        "image": "src/img/image-9.jpg",
+        "price": 632,
+        "popularity": 17,
+        "description": "University of Minnesota, Twin Cities",
+        "state": "Minneapolis, MN"
+      },
+      {
+
+        "name": "Modern Apartment",
+        "image": "src/img/image-10.jpg",
+        "price": 500,
+        "popularity": 13,
+        "description": "University of Minnesota, Twin Cities",
+        "state": "Minneapolis, MN"
+      },
+      {
+
+        "name": "Studio Unit In Trendy",
+        "image": "src/img/image-11.jpg",
+        "price": 588,
+        "popularity": 9,
+        "description": "University of Minnesota, Twin Cities",
+        "state": "Minneapolis, MN"
+      },
+      {
+
+        "name": "The Crystal Mansion",
+        "image": "src/img/image-12.jpg",
+        "price": 634,
+        "popularity": 6,
+        "description": "University of Minnesota, Twin Cities",
+        "state": "Minneapolis, MN"
+      }
+    ]
+}

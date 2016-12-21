@@ -1,0 +1,99 @@
+
+.body {
+    background-color: rgb(230,230,230);
+}
+* {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.sort-button-group{
+    margin: 0 20px 15px 0;
+    float: right
+}
+
+.sort-button {
+    width: 100px;
+}
+
+.apart-display {
+    background-color: #FFFFFF;
+    margin:10px 0 10px 0;
+    padding-left: 0;
+}
+
+.apart-display:hover {
+    background-color: #D8D8D8;
+
+}
+
+.apart-display-img {
+    margin: 0 0 0 0;
+}
+
+img {
+    width: 95%;
+    height: auto;
+}
+
+.orig-h1 {
+    font-size:20px;
+}
+
+.name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.apart-display:hover .name {
+    text-decoration: underline;
+}
+
+.page-style {
+    color: #e9a327;
+}
+
+.col-xs-12.apart-display {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.col-xs-12.col-md-6.col-sm-8.apart-display-img {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.col-xs-12.col-md-6.col-sm-8.apart-display-txt {
+    padding: 10px 0 0 3px;
+}
+
+.h-divider {
+    margin-top: 0;
+    margin-bottom: 20px;
+    height: 1px;
+    width: 100%;
+    border-top: 1px solid lightgray;
+}
+
+.price {
+    color: #f8a729;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-left:65%;
+    margin-top:25%;
+    line-height:65%
+}
+
+.price-pm {
+    color: #f8a729;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left:75%
+}
+
+.price-from {
+    color: #f8a729;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 0;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>WeHousing Search Results</title>
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="bower_components/ng-dialog/css/ngDialog.min.css">
+    <link rel="stylesheet" href="bower_components/ng-dialog/css/ngDialog-theme-default.min.css">
+
+    <!--[if lt IE 9]-->
+    <!--<script src="html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
+    <!--[endif]-->
+</head>
+
+<body class="body" ng-app="searchResult" ng-controller="ListCtrl" background-color="rgb(240,240,240)">
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-8">
+            <h1 class="orig-h1">Minneapolis, MN: 12 Apartments</h1>
+        </div>
+    </div>
+    <!-- Popularity and price descending button -->
+    <div class="row">
+        <div class="col-xs-12 col-md-12">
+            <div class="btn-group sort-button-group">
+                <a type="button" href="#" role="button" ng-click="sort('popularity')" class="btn btn-default sort-button">Popularity</a>
+                <a type="button" href="#" role="button" ng-click="sort('price')" class="btn btn-default sort-button">Price</a>
+            </div>
+        </div>
+    </div>
+    <!-- List view from JSON file -->
+    <div class="row">
+        <div dir-paginate="product in products|orderBy:sortKey:reverse|itemsPerPage:5" >
+            <div class="col-xs-12 apart-display" ng-click="open()">
+                <div class="col-xs-12 col-md-6 col-sm-8 apart-display-img">
+                    <img ng-src="{{product.image}}">
+                </div>
+                <div class="col-xs-12 col-md-6 col-sm-8 apart-display-txt">
+                    <row><p class="name" >{{ product.name }}</p></row>
+                    <div class="h-divider"></div>
+                    <row><p class="description">{{product.description }}</p></row>
+                    <row><p class="state">{{ product.state }}</p></row>
+                    <row><p class="price"><p1 class="price-from">From  </p1>{{ product.price | currency:undefined:0 }}</p></row>
+                    <row><p class="price-pm">USD/Month</p></row>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pagination Controller -->
+    <div class="row" align="center">
+        <dir-pagination-controls
+                max-size="5"
+                direction-links="true"
+                boundary-links="true" >
+        </dir-pagination-controls>
+    </div>
+</div>
+
+    <script type="text/ng-template" id="firstDialog">
+        <div>
+            <h2>More Information</h2>
+            <div></div>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div></div>
+        </div>
+    </script>
+
+
+
+
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    
+    <!-- JS -->
+    <script src="src/script/app.js"></script>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- Bower dirPagination-->
+    <script src="bower_components/angularUtils-pagination/dirPagination.js"></script>
+
+    <!-- Bower ng-dialog -->
+    <script src="bower_components/ng-dialog/js/ngDialog.min.js"></script>
+
+
+
+
+
+</body>
+</html>
